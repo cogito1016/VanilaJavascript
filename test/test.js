@@ -7,3 +7,11 @@
 //백틱이라는 개념이 있다.
 // `Hello ${name} you are ${age} years old` 이렇게 쓸 수 있다.
 //MVC패턴에서 View로 보내준 Model을 사용할때를 보는것같다.
+
+
+//자바스크립트는 HTML을 객체로 가져올 수 있다.
+//Okay Jquery에 있던 $("#")이다. 명령어는 더 길지만 다 가볍고 빠르다.
+const title = document.getElementById("title");
+console.log(title);
+title.innerHTML="Hi From JS ";
+console.log(title.innerHTML);
