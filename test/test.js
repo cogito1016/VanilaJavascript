@@ -37,7 +37,10 @@ function handleResize(event){//event는 이벤트리스너의 콜백함수에 �
 window.addEventListener("resize",handleResize);
 
 function handleClick(){
-    title.style.color='white';
+    const thisColor = title.style.color;
+    if(thisColor=="white")
+        title.style.color='red';
+    else
+        title.style.color='white';
 }//handleClick end
-
 title.addEventListener("click",handleClick);
