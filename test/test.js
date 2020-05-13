@@ -12,6 +12,17 @@
 //자바스크립트는 HTML을 객체로 가져올 수 있다.
 //Okay Jquery에 있던 $("#")이다. 명령어는 더 길지만 다 가볍고 빠르다.
 const title = document.getElementById("title");
+//QuerySelector는 좀 더 $("#")같다. ByClassName과 ById와 다르게 선택자의 표식까지 해주어 구분을한다.
+const title2 = document.querySelector("#title");
+
 console.log(title);
 title.innerHTML="Hi From JS ";
 console.log(title.innerHTML);
+
+//console.dir은 모든 해당 객체가 가지는 모든 속성들을 보여준다.
+//따라서 dir을 통해 해당 HTML의 객체에서 어떤 속성을 제어할 수 있는지 알 수 있다.
+console.dir(title);
+
+// . 키워드를통해 객체가가지는 속성에 접근
+title.style.color='red';
+document.title="안녕 ";
