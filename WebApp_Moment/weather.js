@@ -32,7 +32,7 @@ function loadCoords(){
         askForCoords();
     }else{
         //getWeather
-    }
+    }//if~ else end
 }//loadCOords() end
 
 function init(){
