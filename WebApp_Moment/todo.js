@@ -5,8 +5,23 @@ const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector(".js-toDoList");
 
 const TODOS_LS = 'toDos';
-const toDos = [];
+let toDos = [];
 
+
+
+function deleteTodo(event){
+    const btn = event.target;
+    const li = btn.parentNode;//parentNode를 통해 클릭된버튼의 부모를 얻어올 수 있다.
+    toDoList.removeChild(li);//해당 HTML객체를 지운다.
+    const cleanToDos = toDos.filter(function filterFn(toDo){
+        return toDo.id !== parseInt(li.id);
+    });//그럼 TodoList들을 다시 불러온다.
+    //filter메소드는 array에서 사용할 수 있는 메소드이다. 콜백함수에서 return true가 되는 요소들만 불러와 어레이를 구성한다.
+    //반복문을 써서 번거롭게할 필요없이 편리하다. array.filter().
+    console.log(cleanToDos);
+    toDos=cleanToDos;
+    saveToDos();
+}//deleteTodo() end
 
 function saveToDos(){
     localStorage.setItem(TODOS_LS,JSON.stringify(toDos)); // 무조건 String만 저장가능하므로 어레이를 stringify를 통해 스트링으로 변환
@@ -18,6 +33,7 @@ function paintToDo(text){
     const delBtn = document.createElement("button"); //createElement를 통해 요소를 만들 수 있다.
     const newId = toDos.length+1;
     delBtn.innerText = "❌"; //UTF-8 인코딩을 사용해야하므로 HTML에 charset설정을 해줘야 함(VSCODE자동완성 짱짱맨)
+    delBtn.addEventListener("click",deleteTodo);
     const span = document.createElement("span");
     span.innerText = text;
     li.appendChild(delBtn); //appendChild를 통해 부모에 자식요소들을 추가합니다.
