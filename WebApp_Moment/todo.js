@@ -5,16 +5,31 @@ const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector(".js-toDoList");
 
 const TODOS_LS = 'toDos';
+const toDos = [];
+
+
+function saveToDos(){
+    localStorage.setItem(TODOS_LS,JSON.stringify(toDos)); // 무조건 String만 저장가능하므로 어레이를 stringify를 통해 스트링으로 변환
+
+}//saveToDos() end
 
 function paintToDo(text){
     const li = document.createElement("li");
     const delBtn = document.createElement("button"); //createElement를 통해 요소를 만들 수 있다.
+    const newId = toDos.length+1;
     delBtn.innerText = "❌"; //UTF-8 인코딩을 사용해야하므로 HTML에 charset설정을 해줘야 함(VSCODE자동완성 짱짱맨)
     const span = document.createElement("span");
     span.innerText = text;
     li.appendChild(delBtn); //appendChild를 통해 부모에 자식요소들을 추가합니다.
     li.appendChild(span);
+    li.id = newId; //이렇게 아이디를 줄 수 있다 .id
     toDoList.appendChild(li); 
+    const toDoObj = {
+        text:text,
+        id:newId
+    }
+    toDos.push(toDoObj);
+    saveToDos();
 }//paintToDo() end 
 
 function handleSubmit(event){
@@ -25,9 +40,16 @@ function handleSubmit(event){
 }//handleSubmit() end
 
 function loadToDos(){
-    const toDos = localStorage.getItem(TODOS_LS);
-    if(toDos!==null){
-
+    const loadToDos = localStorage.getItem(TODOS_LS);
+    if(loadToDos!==null){
+        //로컬 스토리지는 모든것을 스트링으로 다룬다고 언급해두었다.
+        //따라서 리스트여도, 그것은 스트링이다 
+        //그렇기때문에 스트링을 리스트형식으로 변환해주어야한다.
+        const parsedToDos = JSON.parse(loadToDos);
+        console.log(parsedToDos);
+        parsedToDos.forEach(function(toDo){ //array에서 기본으로제공하느 메소드인 forEach를 통해 각각 접근가능
+            paintToDo(toDo.text);
+        });
     }//if end
 }//loadTodos() end
 
