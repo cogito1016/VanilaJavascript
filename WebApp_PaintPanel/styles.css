@@ -1,0 +1,39 @@
+@import "./reset.css";
+
+body {
+    background-color:  #F6F9FC;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.canvas{
+    width:700px;
+    height:500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.controls {
+    margin-top: 80px;
+}
+
+.controls .controls_colors{
+    display: flex;  
+    /*플렉스를 주니까 수평정렬이 되던데? position주고 float Let한것과는 좀 다른듯
+    https://heropy.blog/2018/11/24/css-flexible-box/
+    탐색결과, float left를 주고 clear both처리를 하거나, display inlineBlock 후 whiteSpace처리를
+    하는것은 수평정렬의 차선책이였으나,
+    이를 해결하고자 만들어진게 flex, 즉 정렬용도로 만들어진 문법이다.
+    */
+}
+
+.controls_colors .controls_color{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
