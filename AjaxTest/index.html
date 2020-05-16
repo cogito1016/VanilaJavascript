@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>일별 박스오피스</title>
+    <style>
+        #loader{
+            width:100%;
+            height:100%;
+            position: fixed;
+            top:0;
+            left:0;
+            background:url(img/loader.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #fff;
+            opacity: .8;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>2019년 11월 4일 박스오피스</h1>
+
+<p>
+    <select id="year">
+        <option selected>2019</option>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+    </select>
+    <select id="month">
+        <option>01</option>
+        <option>02</option>
+        <option>03</option>
+        <option>04</option>
+        <option>05</option>
+        <option>06</option>
+        <option>07</option>
+        <option>08</option>
+        <option>09</option>
+        <option>10</option>
+        <option selected>11</option>
+    </select>
+    <select id="date">
+        <option>01</option>
+        <option>02</option>
+        <option>03</option>
+        <option selected>04</option>
+        <option>05</option>
+        <option>06</option>
+        <option>07</option>
+        <option>08</option>
+    </select>
+</p>
+<table border="1">
+    <thead>
+    <tr>
+        <th>순위</th>
+        <th>제목</th>
+        <th>개봉일</th>
+        <th>누적매출액</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="4">아직 안불러왔음</td>
+        </tr>
+    </tbody>
+</table>
+
+<script src="./ajaxTest.js"></script>
+</body>
+</html>
