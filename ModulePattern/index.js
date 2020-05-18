@@ -24,7 +24,7 @@ function sayHi(user){
 }//sayHi() end
 
 function sayBye(user){
-    alsert(`Byue ${user}!`);
+    alert(`Byue ${user}!`);
 }//sayBye() end 
 
 export {sayHi, sayBye};
