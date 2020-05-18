@@ -27,4 +27,5 @@ function sayBye(user){
     alert(`Byue ${user}!`);
 }//sayBye() end 
 
-export {sayHi, sayBye};
+//export할때도 알리아스처리가 가능하다
+export {sayHi as hiMan, sayBye as byeMan};
