@@ -1,14 +1,30 @@
+//선언부에 export 붙이기
 
-//클로져란?
-//이미 실행이 종료된 함수의 변수나 함수를 참조할 수 있는 링크를 가진 내부 함수
+//배열내보내기
+export let months=['kim','lee','park'];
 
-function outer(x){
-    function inner(y){
-        return x+y;
-    }//inner() end
-    return inner;
-}//outer() end
+//상수내보내기
+export const MODULES_BECAME_STANDARD_YEAR = 2015;
 
-const inner = outer(5) ; //y의 값이 없으므로 inner은 실행되지 않을것. 따라서 inner함수가 반환된다.
-const result = inner(3); //위의 실행결과 x=5의 갑싱 담긴 inner가 반환되었으므로 3을 넣어준다면 3+5 = 8 의 결과를 반환
-console.log(result);
+//클래스 내보내기 
+export class User {
+    constructor(name){
+        this.name=name;
+    }//cons end
+}//class user end
+
+/* 클래스나 함수를 내보낼때는 세미콜론을 붙이면 안된다.
+    왜냐하면 export를 붙였다 해도 함수표현식이 되는것이 아니라 여전히 함수선언문이다.
+*/
+
+//선언부와 떨어진곳에 export 붙이기
+
+function sayHi(user){
+    alert(`Hello ${user}!`);
+}//sayHi() end
+
+function sayBye(user){
+    alsert(`Byue ${user}!`);
+}//sayBye() end 
+
+export {sayHi, sayBye};
