@@ -5,6 +5,7 @@ export class Chat{
         this.receiver = receiver;
         this.content = content;
         this.date = date;
+        console.log("Chat Class import successfully");
     }//cons end
     
     get getSender(){
