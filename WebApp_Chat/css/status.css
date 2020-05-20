@@ -18,9 +18,9 @@
 .section_status_bar  {
     position: relative;
     display: flex;
-    background-color: aqua;
+    /* background-color: aqua; */
     padding : 15px 0;
-    border-bottom: 1px solid #424242;
+    /* border-bottom: 1px solid #424242; */
 }
 
 .section_status_bar .lab_clock {
@@ -30,5 +30,8 @@
 
 .section_status_bar .group_status {
     position: absolute;
+    display: flex;
+    width:150px;
+    justify-content: space-between;
     right:10px;
 }

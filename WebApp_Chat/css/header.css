@@ -1,6 +1,6 @@
 .section_header {
     position: relative;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     display: flex;
     padding: 20px 0;
     font-size: 20pt;
@@ -17,10 +17,11 @@
     display: flex;
     right:10px;
     width:150px;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     justify-content: space-around;
 }
 
 .section_header .group_menus i {
     cursor: pointer;
+    font-size: 15pt;
 }

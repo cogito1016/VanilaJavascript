@@ -1,19 +1,22 @@
 
 .section_chatting {
     padding: 20px 10px;
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
 }
 
-.section_chatting .list_chat {
-    background-color: darkkhaki;
-
+.section_chatting .list_chat a,
+.section_chatting .list_chat a:link,
+.section_chatting .list_chat a:visited
+{
+    text-decoration: none;
+    color: black;
 }
 
 .section_chatting .list_chat .group_chat {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: darkgreen;
+    /* background-color: darkgreen; */
     cursor: pointer;
 }
 

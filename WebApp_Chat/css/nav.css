@@ -4,7 +4,7 @@
     bottom:0;
     width: 100%;
     padding:20px 0;
-    background-color: darkolivegreen;
+    background-color: #fcfcfc;
 }
 
 .section_nav .group_navs {
@@ -13,6 +13,6 @@
 }
 
 .section_nav .group_navs i {
-    font-size: 30pt;
+    font-size: 20pt;
     cursor: pointer;
 }
