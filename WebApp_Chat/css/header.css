@@ -1,0 +1,25 @@
+.section_header {
+    background-color: cadetblue;
+    display: flex;
+    padding: 20px 0;
+    font-size: 20pt;
+}
+
+.section_header .lab_title {
+    position: relative;
+    left:20px;
+
+}
+
+.section_header .group_menus {
+    position: absolute;
+    display: flex;
+    right:10px;
+    width:150px;
+    background-color: cornflowerblue;
+    justify-content: space-around;
+}
+
+.section_header .group_menus i {
+    cursor: pointer;
+}
