@@ -1,7 +1,8 @@
 export class Chat{
 
-    constructor(sender,content,date){
+    constructor(sender,receiver,content,date){
         this.sender = sender;
+        this.receiver = receiver;
         this.content = content;
         this.date = date;
     }//cons end
@@ -9,6 +10,10 @@ export class Chat{
     get getSender(){
         return this.sender;
     }//getSender() end
+
+    get getReceiver(){
+        return this.receiver;
+    }//getReceiver() end
 
     get getContent(){
         return this.content;
@@ -18,8 +23,8 @@ export class Chat{
         return this.date;
     }//getDate() end
     
-    static readChat(sender,content,date){
-        return new Chat(sender,content,date);
+    static readChat(sender,receiver,content,date){
+        return new Chat(sender,receiver,content,date);
     }//static method readChat() end
 
 }//class chat end
