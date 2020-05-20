@@ -1,0 +1,33 @@
+/* .section_status_bar {
+    background-color: red;
+    padding:10px 0px;
+}
+
+.section_status_bar .lab_clock {
+    display: inline;
+    position: relative;
+    left:10px;
+ }
+
+ .section_status_bar .group_status {
+     display: inline;
+     position: absolute;
+     right:10px;
+ } */
+
+.section_status_bar  {
+    display: flex;
+    background-color: aqua;
+    padding : 20px 0;
+    border-bottom: 1px solid #424242;
+}
+
+.section_status_bar .lab_clock {
+    position: relative;
+    left:10px;
+}
+
+.section_status_bar .group_status {
+    position: absolute;
+    right:10px;
+}
