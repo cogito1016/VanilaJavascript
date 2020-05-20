@@ -2,3 +2,8 @@
 @import "./status.css";
 @import "./header.css";
 @import "./chatting.css";
+@import "./nav.css";
+
+body {
+    width:500px;
+}

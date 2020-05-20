@@ -16,6 +16,7 @@
  } */
 
 .section_status_bar  {
+    position: relative;
     display: flex;
     background-color: aqua;
     padding : 15px 0;

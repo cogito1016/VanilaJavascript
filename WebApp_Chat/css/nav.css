@@ -1,0 +1,18 @@
+
+.section_nav {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    padding:20px 0;
+    background-color: darkolivegreen;
+}
+
+.section_nav .group_navs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section_nav .group_navs i {
+    font-size: 30pt;
+    cursor: pointer;
+}
