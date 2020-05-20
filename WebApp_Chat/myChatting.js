@@ -47,6 +47,9 @@ export class loadChattings{
             userDisplay.classList.add("group_man");
             const timeDiv = document.createElement("div");
             const timeSpan = document.createElement("span");
+
+            timeSpan.innerText= new moment(chat.date).format("MM월DD일");
+
             timeDiv.appendChild(timeSpan);
             timeDiv.classList.add("lab_time");
             li.appendChild(userDisplay);
