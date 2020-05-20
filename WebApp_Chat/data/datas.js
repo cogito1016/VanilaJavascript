@@ -7,3 +7,10 @@ const chattingDatas = [
     {"sender":"박종필","receiver":"김가현","content":"네놈이 대천의 스라소니냐?","date":"2020-03-11"},
     {"sender":"김가현","receiver":"총총이","content":"대천에 놀러오면 해산물을 사주지!","date":"2020-05-22"}
 ]
+
+const users = [
+    {"name":"김재형","picture":"./imgs/bmo.jpg"},
+    {"name":"안승훈","picture":"./imgs/bmo.jpg"},
+    {"name":"이지현","picture":"./imgs/bmo.jpg"},
+    {"name":"김가현","picture":"./imgs/bmo.jpg"},
+]
