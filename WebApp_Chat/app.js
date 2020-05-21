@@ -1,6 +1,6 @@
-import {StatusBar} from './statusBar.js';
-import {Header} from './header.js';
-import {Nav} from './nav.js';
+import {StatusBar} from './templates/statusBar.js';
+import {Header} from './templates/header.js';
+import {Nav} from './templates/nav.js';
 
 import {myChattings} from './chatting.js';
 

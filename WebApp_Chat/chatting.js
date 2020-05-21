@@ -1,4 +1,4 @@
-import {Chat} from './chat.js';
+import {Chat} from './obj/chat.js';
 
 export class myChattings{
     
@@ -19,7 +19,11 @@ export class myChattings{
 
         //여기서 내 채팅들만 가져오는 연산
         this.myChattings = chattings.filter(function(chat){
-            if(chat.receiver==myName || chat.sender==myName) return chat;});
+            if(chat.receiver==myName || chat.sender==myName){
+                const chatObj = Chat.readChat(chat.sender,chat.receiver,chat.content,chat.date);
+                return chatObj;
+            }
+        });
             
     }//getMyChattings() end
 
