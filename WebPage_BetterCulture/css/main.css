@@ -1,0 +1,15 @@
+
+main {
+    background-color: cornflowerblue;
+    height:3000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .row {
+    margin: 0 auto;
+    width:1000px;
+    height:600px;
+    background-color : darkcyan;
+}

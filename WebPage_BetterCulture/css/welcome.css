@@ -1,0 +1,15 @@
+@import 'https://fonts.googleapis.com/css2?family=Jua&display=swap';
+
+.lab_welcome {
+    background-color: darkmagenta;
+    height:180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.lab_welcome h1 {
+    font-size: 35pt;
+    margin-left:20px;
+    font-family: 'Jua', sans-serif;
+}
