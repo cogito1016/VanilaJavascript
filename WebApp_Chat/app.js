@@ -1,5 +1,6 @@
-import {myChattings} from './myChatting.js';
 import {StatusBar} from './statusBar.js';
+import {Header} from './header.js';
+import {myChattings} from './myChatting.js';
 
 class App { 
      
@@ -13,9 +14,11 @@ class App {
     }
 
     init() {
-        new StatusBar(document.querySelector("body"));
-        this.$chattingTarget = document.querySelector(".list_chat");
+        const body = document.querySelector("body");
+        new StatusBar(body);
+        new Header(body,"채팅");
 
+        this.$chattingTarget = document.querySelector(".list_chat");
         console.log(this.$chattingTarget);
     }//init();
 
