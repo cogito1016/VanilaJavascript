@@ -2,17 +2,14 @@
 
 export class StatusBar {
 
-    $target=null;
 
-    constructor($target) {
-        this.$target=$target;
+    constructor() {
         this.createStatusBar();
     }//cons end
 
     createStatusBar() {
-        const sectionStatusBar = document.createElement("div");
-        sectionStatusBar.classList.add("section_status_bar");
-        
+        const $target = document.querySelector(".section_status_bar");
+
         const labClock = document.createElement("div");
         const labClockSpan = document.createElement("span");
         labClockSpan.innerText="14:20";
@@ -41,10 +38,8 @@ export class StatusBar {
         groupStatus.appendChild(batterySpan);
         groupStatus.appendChild(battery);
 
-        sectionStatusBar.appendChild(labClock);
-        sectionStatusBar.appendChild(groupStatus);
-
-        this.$target.appendChild(sectionStatusBar);
+        $target.appendChild(labClock);
+        $target.appendChild(groupStatus);
     }//createStatusBaar() end
 
 }//class StatusBar end

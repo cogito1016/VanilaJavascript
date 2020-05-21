@@ -2,17 +2,15 @@
 
 export class Header {
 
-    $target=null;
     pageName='';
-    constructor($target,thisPage) {
-        this.$target=$target;
+    constructor(thisPage) {
         this.pageName=thisPage;
         this.createHeader();
     }//cons end
 
     createHeader() {
-        const sectionHeader = document.createElement("div");
-        sectionHeader.classList.add("section_header");
+        const $target = document.querySelector(".section_header");
+
         
         const labTitle = document.createElement("div");
         const labTitlekSpan = document.createElement("span");
@@ -34,10 +32,8 @@ export class Header {
         groupMenus.appendChild(comment);
         groupMenus.appendChild(cog);
 
-        sectionHeader.appendChild(labTitle);
-        sectionHeader.appendChild(groupMenus);
-
-        this.$target.appendChild(sectionHeader);
+        $target.appendChild(labTitle);
+        $target.appendChild(groupMenus);
     }//createStatusBaar() end
 
 }//class StatusBar end

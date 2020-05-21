@@ -1,19 +1,17 @@
 import {Chat} from './chat.js';
 
-
 export class myChattings{
     
-    $target = null;
     myChattings=[];
     myName;
 
-    constructor($target) {
-        this.$target = $target;
+    constructor() {
         this.myName = "총총이";
-        console.log("Load Chattings class import successfully"); 
+        console.log("Load Chattings class import successfully");
         this.getMyChattings();
         this.paintMyChattings();
-    }
+    }//cons end
+
 
     getMyChattings(){//전체 채팅데이터에서 '나'의 채팅데이터를 가져오자
         const chattings = chattingDatas;
@@ -21,14 +19,13 @@ export class myChattings{
 
         //여기서 내 채팅들만 가져오는 연산
         this.myChattings = chattings.filter(function(chat){
-            if(chat.receiver==myName || chat.sender==myName)
-                return chat;
-        });
-        console.log(this.myChattings);
+            if(chat.receiver==myName || chat.sender==myName) return chat;});
+            
     }//getMyChattings() end
 
     paintMyChattings() {
-        const $target = this.$target;
+        const $target = document.querySelector(".list_chat");
+
         this.myChattings.forEach(function(chat){
             const a = document.createElement("a");
             const li = document.createElement("li");
