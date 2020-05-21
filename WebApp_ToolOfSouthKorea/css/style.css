@@ -1,2 +1,11 @@
 @import './reset.css';
+@import './header.css';
 
+a {
+    text-decoration: none;
+}
+
+a:visited,
+a:link{
+    color:black;
+}

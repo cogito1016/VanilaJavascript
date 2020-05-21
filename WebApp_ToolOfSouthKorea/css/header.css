@@ -1,0 +1,21 @@
+
+header {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+header .logo {
+    margin-left: 30px;
+    background-color: burlywood;
+}
+
+header .list_menu {
+    display: flex;
+    width:250px;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: space-between;
+
+}
