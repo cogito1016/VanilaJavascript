@@ -1,7 +1,7 @@
 import {Chat} from './chat.js';
 
 
-export class loadChattings{
+export class myChattings{
     
     $target = null;
     myChattings=[];

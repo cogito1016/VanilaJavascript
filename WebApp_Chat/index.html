@@ -12,19 +12,6 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="section_status_bar">
-        <div class="lab_clock">
-            <span>14:20</span>
-        </div><!--lab_clock end-->
-        <div class="group_status">
-            <i class="far fa-clock"></i>
-            <i class="fas fa-wifi"></i>
-            <i class="fas fa-volume-down"></i>
-            <span class="lab_battery">100%</span>
-            <i class="fas fa-battery-full"></i>
-        </div><!--group_status end-->
-    </div><!--section_status_bar end-->
-
     <div class="section_header">
         <div class="lab_title">
             <span>채팅</span>
@@ -58,16 +45,17 @@
     
     <div class="section_nav">
         <div class="group_navs">
-            <i class="fas fa-user"></i>
-            <i class="fas fa-comment"></i>
-            <i class="fas fa-search"></i>
-            <i class="fas fa-ellipsis-h"></i>
+            <a href="./friends.html"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-comment"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-ellipsis-h"></i></a>
         </div><!--group_navs end-->
     </div><!--section_nav end-->
 </body>
 <script src="./lib/moment-with-locales.js"></script>
 <script type="module" src="./chat.js"></script>
 <script type="module" src="./myChatting.js"></script>
+<script type="module" src="./statusBar.js"></script>
 <script type="module" src="./app.js"></script>
 <script src="./data/datas.js"></script>
 </html>

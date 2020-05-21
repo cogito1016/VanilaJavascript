@@ -4,13 +4,6 @@
     /* background-color: darkgoldenrod; */
 }
 
-.section_chatting .list_chat a,
-.section_chatting .list_chat a:link,
-.section_chatting .list_chat a:visited
-{
-    text-decoration: none;
-    color: black;
-}
 
 .section_chatting .list_chat .group_chat {
     display: flex;
