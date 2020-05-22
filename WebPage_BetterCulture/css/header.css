@@ -2,7 +2,7 @@
 
 
 header {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
@@ -10,7 +10,7 @@ header {
 
 header .logo {
     margin-left: 30px;
-    background-color: burlywood;
+    /* background-color: burlywood; */
 }
 
 header .logo img {
@@ -28,4 +28,9 @@ header .list_menu {
 
 header .list_menu .item_menu {
     font-family: 'Do Hyeon', sans-serif;
+    transition: .2s ease;
+}
+header .list_menu .item_menu:hover {
+    font-size: 15pt;
+    border-bottom: 1px solid #424242;
 }
