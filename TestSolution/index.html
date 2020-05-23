@@ -27,6 +27,8 @@
     
     <script>
         function pow(x,n){
+            if(n<0) return NaN; //음수로 제곱하려고 할때
+            if(Math.round(n) != n) return NaN; //정수가 아닌걸로 제곱하려고 할때
             // 코드를 여기다가 작성
             let result = 1;  
 
