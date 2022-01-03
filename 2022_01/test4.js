@@ -20,6 +20,7 @@ const bookKeys = Object.keys(book);
 //   book[defaultKey] = book[defaultKey] || defaultValue;
 // }
 
-Object.assign(book, defaults);
-
+// Object.assign(book, defaults);
+const updatedBook = Object.assign({}, book, defaults);
 console.log(book);
+console.log(updatedBook);
