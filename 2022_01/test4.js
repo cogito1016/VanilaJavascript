@@ -14,9 +14,10 @@ const bookKeys = Object.keys(book);
 for (let i = 0; i < defaultKeys.length; i++) {
   let defaultKey = defaultKeys[i];
   let defaultValue = defaults[defaultKey];
-  if (book[defaultKey] === undefined) {
-    book[defaultKey] = defaultValue;
-  }
+  //   if (book[defaultKey] === undefined) {
+  //     book[defaultKey] = defaultValue;
+  //   }
+  book[defaultKey] = book[defaultKey] || defaultValue;
 }
 
 console.log(book);
