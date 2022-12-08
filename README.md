@@ -1,5 +1,12 @@
 # VanilaJavascript
 
-#바닐라자바스크립트_스터디
-#바닐라자바스크립트_미니프로젝트
-#제이쿼리로_만들었던_스터디내용_자바스크립트로_전환
+- - - 
+* Visual Studio Code - Javascript 실행
+- extension > code runner 다운로드
+- Ctrl + Alt + N
+
+- - -
+
+* Object.keys() 
+- 문자열, 배열 등 이터러블이 내장되어있으면 사용 가능
+- 데이터를 순회하며 실행
