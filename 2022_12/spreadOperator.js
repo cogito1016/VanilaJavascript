@@ -22,7 +22,15 @@ function formatBook(title, author, price){
 console.log(formatBook(...book));
 
 //3.Push대신 펼침연산자 처리
-
 let members = ['a','b','c'];
 console.log(['d',...members]);
 console.log(members);
+
+//4.Sort시 사본사용(펼침연산자)
+let numbers = [1,4,2,3];
+
+console.log('Sort Test ---')
+console.log([...numbers].sort());
+console.log(numbers);
+console.log(numbers.sort());
+console.log(numbers);
