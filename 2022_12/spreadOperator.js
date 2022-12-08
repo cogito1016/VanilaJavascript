@@ -20,3 +20,9 @@ function formatBook(title, author, price){
 }
 
 console.log(formatBook(...book));
+
+//3.Push대신 펼침연산자 처리
+
+let members = ['a','b','c'];
+console.log(['d',...members]);
+console.log(members);
