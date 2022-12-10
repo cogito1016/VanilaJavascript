@@ -118,7 +118,7 @@ const employee = {
 
 #### for ... of 로 이터레이터를 사용할 수 있다
 ```javascript
-for( temp_variable of Map ){
+for( const temp_variable of Map ){
     //temp_variable로 Map, Arr, Set 순회
 }
 ```
@@ -126,7 +126,7 @@ for( temp_variable of Map ){
 #### for ... in 로 키-값 객체에서만 동작한다.
 - Object.keys()없이 객체 순회 가능
 ```javascript
-for( idOrKey in Object){
+for( const idOrKey in Object){
     const value = Object.idOrKey;
 }
 ```
