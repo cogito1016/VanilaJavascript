@@ -132,9 +132,9 @@ for( const idOrKey in Object){
 ```
 
 - - -
-### Return
+### Parameter & Return
 
-#### Default Parameter
+1. #### Default Parameter
 - 코드가 늘어나도 요구사항이 변경되면, 함수의 매개변수도 달라질 수 있다.
 - 매개변수가 추가된 경우, 기존 사용했던 함수들의 충돌을 피하기위해 defaultValue를 설정하게 된다.
 - 한두개면 모를까 점점 늘어나게되면, 코드는 너무 지저분쓰.
@@ -149,3 +149,11 @@ function convertWeight(weight, ounces=0, roundTo=2)
 ###### 한계점
 - 매개변수의 순서가 중요하다.
 - 온스추가를 안하고 라운드투만 입력하려면, convertWeight(10,0,8)과 같이 굳이 온스에 0을 입력해줘야 함
+
+
+2. #### Destructuring Assignment (해체할당)
+- 객체를 넘겨줄때 object.key과 같은 구문으로 변수에 할당을 하여 처리할 수 있다.
+- 그 경우, 많은량의 코드를 변수할당에 쓰이게된다.
+- 해체할당을 통해 이 부분을 생략할 수 있다.
+- 추가로, 기본값 설정도 가능하다.
+- 추가로, 나머지매개변수를 사용할 수 있다. (펼침연산자 ... 를 사용하여) (정보수집 때 사용하면 나머지매개변수라 칭한다)
