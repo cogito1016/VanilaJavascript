@@ -130,3 +130,11 @@ for( const idOrKey in Object){
     const value = Object.idOrKey;
 }
 ```
+
+- - -
+### Return
+
+#### Default Parameter
+- 코드가 늘어나도 요구사항이 변경되면, 함수의 매개변수도 달라질 수 있다.
+- 매개변수가 추가된 경우, 기존 사용했던 함수들의 충돌을 피하기위해 defaultValue를 설정하게 된다.
+- 한두개면 모를까 점점 늘어나게되면, 코드는 너무 지저분쓰.
