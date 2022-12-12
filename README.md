@@ -138,3 +138,14 @@ for( const idOrKey in Object){
 - 코드가 늘어나도 요구사항이 변경되면, 함수의 매개변수도 달라질 수 있다.
 - 매개변수가 추가된 경우, 기존 사용했던 함수들의 충돌을 피하기위해 defaultValue를 설정하게 된다.
 - 한두개면 모를까 점점 늘어나게되면, 코드는 너무 지저분쓰.
+- defaultParameter을 사용하여 처리
+
+```javascript
+function convertWeight(weight, ounces=0, roundTo=2)
+```
+- 다른 개발자에게 자료형의 정보를 제공할 수 있다.
+- 그럴거면 타입스크립트를 쓰면 더 좋을듯
+
+###### 한계점
+- 매개변수의 순서가 중요하다.
+- 온스추가를 안하고 라운드투만 입력하려면, convertWeight(10,0,8)과 같이 굳이 온스에 0을 입력해줘야 함
