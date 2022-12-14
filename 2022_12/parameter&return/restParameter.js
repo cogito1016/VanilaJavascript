@@ -27,3 +27,14 @@ function validateItemsLengthUsingArguments(max){
 
 console.log(validateItemsLengthUsingArguments(4,'hello','world')) // true
 console.log(validateItemsLengthUsingArguments(4,'hello','hey')) // false
+
+//펼침연산자 방식
+//펼침연산자를 활용한 Item Validation Check Function
+function validateItemsLengthUsingSpreadOperator(max, ...restParameter){
+    return restParameter.every((element)=>element.length>=max);
+}
+
+console.log(validateItemsLengthUsingSpreadOperator(4,'hello','world')) // true
+console.log(validateItemsLengthUsingSpreadOperator(4,'hello','hey')) // false
+console.log(validateItemsLengthUsingSpreadOperator(4, ...['hello','World'])); // true
+console.log(validateItemsLengthUsingSpreadOperator(4, ...['hello','hey'])); // false
