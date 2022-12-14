@@ -171,3 +171,17 @@ const [one,two] = arrName
 ```
 
 ###### 해체할당의 단점 = 배열에만 가능하다
+
+
+- - -
+### Arguments 객체
+- 내장된 객체
+- 함수에 전달된 모든 인수를 담은 배열과 유사한 객체
+```javascript
+function getArguments(){
+    return arguments;
+}
+getArguments('Hello', 'World');
+```
+###### return [Arguments] { '0': 'Blood', '1': 'June' }
+
