@@ -23,3 +23,14 @@ function displayPhoto({title, photographer, equipment, format, appendedData="기
 }
 
 displayPhoto(landscape);
+
+//배열에도 가능하다
+const landscape2 = {
+    location : [37.71222, -103.150404]
+};
+
+// const [lat,log] = landscape2.location;
+const {location : [lat,log]} = landscape2; 
+
+console.log(`위도 : ${lat} 경도 : ${log}`);
+
