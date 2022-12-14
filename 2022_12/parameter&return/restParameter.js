@@ -17,3 +17,13 @@ function getArguments(){
 }
 
 console.log(getArguments('Blood','June'));
+
+//기존의 방식
+//Arguments를 활용한 Item Validation Check Function
+function validateItemsLengthUsingArguments(max){
+    const items = Array.prototype.slice.call(arguments,1);
+    return items.every((element)=>element.length>=max);
+}
+
+console.log(validateItemsLengthUsingArguments(4,'hello','world')) // true
+console.log(validateItemsLengthUsingArguments(4,'hello','hey')) // false
