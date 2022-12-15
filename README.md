@@ -191,3 +191,16 @@ getArguments('Hello', 'World');
 3. 몸체를 살펴봐야 파악이된다
 
 ###### 인수제한을 두지않는 방식은 Arguments말고 나머지매개변수(펼침연산자)를 활용하자.
+
+- 나머지 매개변수의 유일한 단점은, '언제나 마지막에 사용해야 한다'
+
+- - -
+### 테스트
+
+#### Jest
+###### 설치
+- https://jestjs.io/docs/getting-started
+
+1. npm install --save-dev jest
+2. npm install --save-dev @types/jest 
+3. VScode Extension - Jest
