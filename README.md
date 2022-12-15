@@ -204,3 +204,15 @@ getArguments('Hello', 'World');
 1. npm install --save-dev jest
 2. npm install --save-dev @types/jest 
 3. VScode Extension - Jest
+4. npm test
+
+#### 스텁
+- 
+
+#### 모의객체
+- 
+
+#### 스파이
+- 
+
+- - -
