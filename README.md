@@ -246,3 +246,9 @@ console.log(mergeProgramInformation(building,manager,exhibit));
 const func2 = func1(a,b)
 ```
 2. 위의 경우, func2는 func1에 a,b라는 인수가 하드코딩된 함수가 되어 어디서든 호출가능하다.
+
+###### 커링
+- 한번에 인수를 하나만 받는 함수
+- 하나의 인수만 전달하는 메서드를 다룰 때 매우 유용
+- 자바스크립트는 완벽한 커링을 지원하지는 않지만,
+- 부분적용을 이용하여 일련의 단일매개변수로 매개변수 숫자를 줄이는 방법이 일반적
