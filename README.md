@@ -217,3 +217,20 @@ getArguments('Hello', 'World');
 
 - - -
 #### Arrow Functio ( 화살표 함수 )
+
+
+- - -
+#### 고차함수
+- 다른 함수를 반환하는 함수
+
+##### 부분 적용 함수
+- 일부 매개변수를 전달하면 해당 매개변수를 잠그는 함수가 반환되어 여기에 더 많은 매개변수를 사용할 수 있음
+- 즉 부분 적용 함수를 사용하면 한 번에 전달해야 할 함수 인수의 수가 줄어드는 대신, 더 전달해야 하는 다른 함수를 반환한다.
+
+```javascript
+console.log(mergeProgramInformation(building, manager, program));
+console.log(mergeProgramInformation(building,manager,exhibit));
+
+```
+1. 보내야하는 인수가 고정되었을 때, 반복해서 호출하게 된다.
+
