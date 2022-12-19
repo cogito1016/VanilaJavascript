@@ -48,5 +48,11 @@ function mergeProgramInfomation(building, manager){
     };
 }
 
-console.log(mergeProgramInfomation(building,manager)(program));
-console.log(mergeProgramInfomation(building,manager)(exhibit));
+
+// console.log(mergeProgramInfomation(building,manager)(program));
+// console.log(mergeProgramInfomation(building,manager)(exhibit));
+
+const newFuncUsingFixedParameter = mergeProgramInfomation(building,manager);
+
+console.log(newFuncUsingFixedParameter(program));
+console.log(newFuncUsingFixedParameter(exhibit));
