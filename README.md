@@ -233,4 +233,6 @@ console.log(mergeProgramInformation(building,manager,exhibit));
 
 ```
 1. 보내야하는 인수가 고정되었을 때, 반복해서 호출하게 된다.
+2. 반복되는 인수는 외부함수로, 이 외부함수가 호출되면 program을 인수로 활용하는 함수를 반환하게 만들어야 한다.
+3. 그렇다면 매개변수에 단일책임을 부여할 수 있게된다.
 

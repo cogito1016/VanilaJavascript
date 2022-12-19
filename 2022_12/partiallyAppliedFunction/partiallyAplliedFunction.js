@@ -19,18 +19,34 @@ const exhibit= {
     contact: 'Dyan'
 }
 
-function mergeProgramInformation(building, manager, event){
+// function mergeProgramInformation(building, manager, event){
+//     const {hours, address} = building;
+//     const {name, phone} = manager;
+//     const defaults = {
+//         hours,
+//         address,
+//         contact:name,
+//         phone
+//     };
+
+//     return {...defaults, ...event};
+// }
+
+// console.log(mergeProgramInformation(building, manager, program));
+// console.log(mergeProgramInformation(building,manager,exhibit));
+
+function mergeProgramInfomation(building, manager){
     const {hours, address} = building;
     const {name, phone} = manager;
-    const defaults = {
-        hours,
-        address,
-        contact:name,
-        phone
-    };
 
-    return {...defaults, ...event};
+    return function(program){
+        const defaults = {
+            hours, address, name, phone
+        }
+
+        return {...defaults, ...program};
+    };
 }
 
-console.log(mergeProgramInformation(building, manager, program));
-console.log(mergeProgramInformation(building,manager,exhibit));
+console.log(mergeProgramInfomation(building,manager)(program));
+console.log(mergeProgramInfomation(building,manager)(exhibit));
