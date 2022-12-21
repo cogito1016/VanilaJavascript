@@ -269,3 +269,11 @@ const coupon = new Coupon();
 - function키워드 없이 동작
 - this를 사용하여 클래스에 속성 추가
 - 생성자를 통해 인수를 받을 수 있음
+```javascript
+class Coupon{
+    constructor(price, expiration){
+        this.price = price;
+        this.expiration = expiration || '2주';
+    }
+}
+```
