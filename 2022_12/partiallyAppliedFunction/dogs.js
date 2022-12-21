@@ -10,7 +10,11 @@ function getDogsName(dogs, filter){
     const result = dogs.filter(filter);
     return result;
 }
-
+˜
 
 console.log(getDogsName(dogs, (dog)=>dog.kind==='리트리버'));
 // console.log(getDogsName(dogs, ))
+
+
+const colorCheck = color => dog => dog['color'] === color;
+console.log(getDogsName(dogs,colorCheck('black')));
