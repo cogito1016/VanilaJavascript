@@ -1,4 +1,9 @@
 # VanilaJavascript
+- - -
+#### Javascript
+- Javascript는 비동기언어
+- 즉, 이전의 코드가 완전히 해결되지 않아도 이어지는 코드를 실행할 수 있다.
+
 
 - - - 
 ###### Visual Studio Code - Javascript 실행
